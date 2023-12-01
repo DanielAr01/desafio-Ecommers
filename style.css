@@ -1,0 +1,40 @@
+.container{background-color: rgb(237, 243, 238);
+    border: 1px solid black;
+    display:grid;
+    grid-template-columns: 1fr 1fr 95% ;
+    gap: 1px;
+    grid-template-rows: 30px 500px 30px;
+    width: 90rem;
+    padding: auto;
+    }
+    
+    .navbar{
+    background-color: aqua;
+    grid-column: 1/4;}
+    .asidebar{
+    background-color: rgb(236, 147, 12);
+    grid-row: 2/3;
+    width: 85px;
+    }
+    .contenidoFlex{display: flex;
+    flex-direction: column;}
+    .cards{
+    background-color: rgba(233, 195, 195, 0.745);
+    grid-column: 3/4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+    .flexcards{display: flex;}
+    .card1{
+    align-items: center;
+    border:1px solid rgb(207, 44, 44) ;
+    display:flex;
+    flex-direction: column;}
+    .card1 h2{border:1px solid red;
+    align-items: center;}
+    .card1 p{border: 1px solid blue;}
+    .card1 button{background-color: blue;}
+    .footer{
+    background-color: rgb(188, 48, 48);
+    grid-column: 1/4;}
+    h2{margin:0 ;}
