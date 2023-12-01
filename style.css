@@ -1,8 +1,6 @@
 .container{background-color: rgb(237, 243, 238);
-    border: 1px solid black;
     display:grid;
     grid-template-columns: 1fr 1fr 95% ;
-    gap: 1px;
     grid-template-rows: 30px 500px 30px;
     width: 90rem;
     padding: auto;
@@ -10,7 +8,9 @@
     
     .navbar{
     background-color: rgb(52, 47, 107);
-    grid-column: 1/4;}
+    grid-column: 1/4; display: flex;
+    justify-content: center;
+    }
     .asidebar{
     background-color: rgba(233, 195, 195, 0.745);
     grid-row: 2/3;
@@ -18,31 +18,29 @@
     }
     .contenidoFlex{display: flex;
     flex-direction: column;}
+    .contenidoFlex > p{margin: 4px;}
     .cards{
     background-color: rgba(233, 195, 195, 0.745);
     grid-column: 3/4;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
     }
     .flexcards{
     display: flex; 
     gap:5rem;
-    border: 1px solid black;
-
-    
     }
     .card1{
     align-items: center;
     display:flex;
     flex-direction: column;
     background-color: rgb(247, 248, 249);
-    border: 1px solid salmon;
+    height: 360px;
     }
     .card1 h2{
     align-items: center;}
     .card1 button{background-color: rgb(52, 47, 107);}
     .footer{
     background-color: rgb(232, 231, 239);
-    grid-column: 1/4;}
+    grid-column: 1/4; display: flex; 
+    justify-content: center;}
     h2{margin:0 ;}
